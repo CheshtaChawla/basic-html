@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Us</title>
+</head>
+<style>
+	body {
+		background-color: whitesmoke;
+		font-size: medium;
+	}
+
+	body background-image {
+		background-repeat: no-repeat;
+		position: absolute;
+	}
+
+	img {
+		float: left;
+		clear: right;
+	}
+
+	#para {
+		font-size: larger;
+		padding: 15px;
+		color: black;
+	}
+
+	#paragraph1 {
+		font-size: larger;
+		padding: 15px;
+		color: black;
+		color: rgb(0, 0, 0);
+		z-index: -1;
+	}
+
+	#paragraph2 {
+		font-size: larger;
+		padding: 15px;
+		color: black;
+		color: rgb(0, 0, 0);
+	}
+
+	#image1 {
+		float: left;
+		clear: right;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	#image1:hover {
+		border-radius: 30%;
+		transition-duration: 0.5s;
+	}
+
+	#image3 {
+		float: right;
+		clear: left;
+	}
+
+	#image3:hover {
+		border-radius: 30%;
+		transition-duration: 0.5s;
+	}
+
+	#image4 {
+		float: left;
+		clear: right;
+		margin-right: 10px;
+		margin-left: 10px;
+
+	}
+
+	#image4:hover {
+		border-radius: 30%;
+		transition-duration: 0.5s;
+	}
+
+	body {
+		font-family: sans-serif;
+		margin: 0;
+		color: black;
+		line-height: 2.0;
+		background-color: whitesmoke;
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
+
+	h1 {
+		padding: 15px;
+		font-size: largest;
+	}
+
+	nav {
+		height: 100px;
+		width: 100%;
+		background-color: slategrey;
+		color: rgb(51, 34, 34);
+		position: unset;
+	}
+
+	nav ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	nav li {
+		display: inline;
+		float: left;
+	}
+
+	nav a {
+		display: inline-block;
+		width: 200px;
+		text-align: center;
+		text-decoration: none;
+		padding: 30px 0px;
+		color: ghostwhite;
+		text-decoration: none;
+	}
+
+	nav li:hover {
+		/*background-color: lightslategrey;*/
+		transform: scale(1.1, 1);
+	}
+
+	nav li a:hover {
+		color: black;
+		transition-duration: 0.3s;
+	}
+
+	.container {
+		max-height: 1100px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.lead {
+		font-size: 1.3rem;
+	}
+
+	.backVedio {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		opacity: 40%;
+	}
+
+	/* .bground { */
+		/* z-index: -1;
+		opacity: 40%; */
+	/* } */
+
+
+
+
+
+
+	/* -------------------------------------------------ye haii changes-------------------------------------- */
+	.last-para{
+		width: 100%;
+		height: 100%;
+	}
+	.last-content{
+		background-image: url('photos/furniture.jpg');
+		width: 100%;
+		height: 100vh;
+	}
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+	.moto {
+		font-style: book antiqua;
+	}
+
+	/*@media(min-aspect-ratio: 16/9){
+	.backVedio{
+	 width: 100%;
+	 height: auto;
+ }
+ @media(max-aspect-ratio: 16/9){
+	.backVedio{
+	 width: auto;
+	 height: 100%;
+ }*/
+</style>
+
+<body>
+	<img class="logo" src="images/logo/logo4.jpg" width="20%" height="10%">
+	<video autoplay loop muted plays-inline controls class="backVedio" src="photos/bgVideo.mp4"></video>
+
+	<header>
+		<!-- CONTAINER-->
+		<nav class="cf">
+			<ul class="cf">
+				<li class="hide-on-small">
+					<a href="projectCFH.html">Home</a>
+				</li>
+				<li>
+					<a href="aboutUs.html">About Us</a>
+				</li>
+				<li>
+					<a href="features.html">Features</a>
+				</li>
+				<li>
+					<a href="categories.html">Categories</a>
+				</li>
+				<li>
+					<a href="gallery.html">Gallery</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!--<img id="image1" src="photos/furniture.jpg" width="750px" height="400px">-->
+	<h1><u>ABOUT US</u></h1>
+
+	<p><i>
+			<div id="para" class="pa">Chirag Furniture House was established in year <b>2018</b>.
+		</i><br>
+		</t>
+	<div class="moto">Our MOTO is to focus on the Quality of the product</div>, beautifully designed furniture at a
+	great price with exceptional services.
+	Our coustomers seems to be happy with what we manufactures and what we sold to them.
+	Our customers are passionate about great design and to find furniture to inspire and excite our coustomers.
+	the pieces the choose are always of the higher quality and worthlt of our 15-years of warranty.
+	</div>
+	</p>
+
+	<!--<img id="image3" src="photos/image3.jpg" width="700px" height="350px">-->
+	<p id="paragraph1">
+	<div class="pa">
+		Our Profession<br>
+		<i>At Chirag Furniture House</i>, we take pride in selling beautiful furniture that can last a lifetime and in
+		building strong and lasting relationship with the passionate, dedicated people we work with.
+		We welcome people form all backgrounds who share our core values - <u>Integrity</u>, <u>Passion for quality
+			craftmanship</u> and <u>Commitments to exceptional customer services</u>.
+	</div>
+	</p>
+	<br><br><br><br>
+	<!--<img id="image4" src="photos/aboutUs1.jpg" width="600px" height="275px">-->
+
+
+
+
+	<!-- ----------------------------------------------------------ye hai changes--------------------------------------- -->
+	<div class="last-content">
+		<!-- <img class="bground" src="photos/furniture.jpg"> -->
+
+		<div class="last-para">
+			<p id="paragraph2"><u><b>The Raw Material which we use are:-</b></u> <br> >Sagvan Tree Wood <br> >Teak Tree
+				Wood
+				<br> >Sal Tree Wood <br> >Ply <br> >90mm Water-Proof Ply <br> >And Other Depends Upon Coustomer
+				Requirement.<br>
+				<u>Some of the Polishes which we use are:-</u><br> >PU-Matte Polish <br> >PU-Glosy Polish <br> >Melamine
+				Poloish<br> >Water-Proof Polish.<br> >And Other Depends Upon Coustomer Requirement.
+
+			</p>
+		</div>
+	</div>
+	<!-- ------------------------------------------------------------------------------------------------------------------- -->
+
+
+</body>
+
+</html>

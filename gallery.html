@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery</title>
+  <style>
+body{
+  font-family: sans-serif;
+  margin: 0;
+  color: black;
+  line-height: 2.0;
+  background-color: lightslategrey;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+nav{
+  height: 100px;
+  width: 100%;
+  background-color: slategrey;
+  color: rgb(51,34, 34);
+  position: unset;
+}
+nav ul{
+  padding: 0;
+  margin: 0;
+}
+nav li{
+  display: inline;
+  float: left;
+}
+nav a{
+display: inline-block;
+width: 200px;
+text-align: center;
+text-decoration: none;
+padding: 30px 0px;
+color: ghostwhite;
+text-decoration: none;
+}
+nav li:hover{
+  /*background-color: lightslategrey;*/
+   transform: scale(1.1,1);
+}
+nav li a:hover{
+  color: black;
+  transition-duration: 0.3s;
+}
+.container{
+  max-height: 1100px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+  .lead{
+  font-size: 1.3rem;
+}
+.row{
+  width: 80%;
+  min-height: 85vh;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col{
+  margin: 20px 0;
+  flex-basis: 50%;
+  min-width: 300px;
+  height: 100%;
+  position: relative;
+  background-color: slategrey;
+}
+.text-box{
+  max-width: 400px;
+  margin-top: 100px;
+}
+.text-box h5{
+  font-size: 20px;
+  font-weight: 50px;
+}
+.text-box h1{
+  font-size: 50px;
+  font-weight: 50px;
+  letter-spacing: 3px;
+  line-height: 65px;
+}
+.gallery-box{
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+.gallery-box img{
+  width: 90%;
+  border: 10px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+
+}
+.grid-item{
+  border-radius: 25px;
+  background-color: whitesmoke;
+  border: 1px solid slategrey;
+  padding: 20px;
+  margin: 20px;
+  font-size: 30px;
+  text-align: center;
+  grid-gap: 50 px;
+}
+.grid-container{
+  padding: "20px";
+  display: grid;
+  grid-gap: "10px";
+  background-color: lightslategrey;
+  grid-template-areas: 
+  'bed bed bed'
+  'cupbordes sofa sofa'
+  'cupbordes sofa-table study-table'
+  'sofa-come-bed sofa-come-bed relaxing-chair'
+  'chair dinning-set dinning-set'
+  'coolers shoe-rack dressing'
+  'coolers mandir dressing';
+}
+#grid-1{
+  grid-area: 'bed';
+  grid-column: 1 / span 4;
+}
+#grid-2{
+  grid-area: 'cupbordes';
+   grid-row: 2 /span 2;
+}
+#grid-3{
+  grid-area: 'sofa';
+  grid-column: 2 /span2;
+}
+#grid-4{
+  grid-area: 'sofa-table';
+  grid-column: 2 ;
+}
+#grid-5{
+  grid-area: 'study-table';
+  grid-column: 3/span 2 ;
+}
+#grid-6{
+  grid-area: 'sofa-come-bed';
+  grid-column: 1 /span 3;
+  grid-row: 4;
+}
+#grid-7{
+  grid-area: 'relaxing-chair';
+  grid-column: 3/span 2
+
+}
+#grid-8{
+  grid-area: 'chair';
+  grid-row: 5;
+}
+#grid-9{
+  grid-area: 'dinning-set';
+  grid-column: 2/ span 3;
+}
+#grid-10{
+  grid-area: 'coolers';
+  grid-row: 6 / span 2;
+}
+#grid-11{
+  grid-area: 'shoe-rack';
+  grid-column: 2;
+}
+#grid-12{
+  grid-area: 'mandir';
+  grid-column: 3/span2;
+}
+
+#grid-13{
+  grid-area: 'dressing';
+  grid-column: 2 / span2;
+}
+.items{
+  border: 3px solid lightslategrey;
+  font-size: 20px;
+}
+.logo:hover{
+    transform: skewX(5deg);
+    }
+    
+  </style>
+</head>
+<body>
+  <img class="logo" src="images/logo/logo4.jpg" width="20%" height="10%">
+<header><!-- CONTAINER-->
+        <nav class="cf">
+          <ul class="cf">
+            <li class="hide-on-small">
+              <a href="projectCFH.html">Home</a>
+            </li>
+            <li>
+              <a href="aboutUs.html">About Us</a>
+            </li>
+            <li>
+              <a href="features.html">Features</a>
+            </li>
+            <li>
+              <a href="categories.html">Categories</a>
+            </li>
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        </ul>
+        </nav>
+      </header>
+   <div class="row">
+
+     <div class="col">
+       <div class="text-box">
+         <h1><i>Simplicity <br>is the ultimate Sophistication..</i></h1>
+       </div>
+       
+
+     </div>
+     <div class="col">
+      <div class="gallery-box">
+        <img src="photos/front.jpg" id="gallery">
+        
+      </div>
+     </div>
+     <div class="grid-container">
+    <div class="grid-item" id="grid-1">Bed-Mattresses<br>
+    <img src="images/bed/bed4.jpg" height="150px" width="200px">
+    <img src="images/bed/bed2.jpg" height="150px" width="200px">
+    <img src="images/bed/bed1.jpg" height="150px" width="200px">
+    <img src="images/bed/bed3.jpg" height="150px" width="200px">
+    <div>
+    <a class="items" href="bed.html">For more "Click Here"</a>
+    </div>
+    </div>
+
+   <div class="grid-item" id="grid-2">Cupbordes/Almiras<br>
+   <img src="images/almirah/almira2.jpg" height="500px" width="200px">
+   <div>
+      <a class="items" href="cupboardes.html">For more "Click Here"</a>
+    </div>
+    </div>
+    
+   <div class="grid-item" id="grid-3">Sofa<br>
+  <img src="images/sofa/sofa1.jpg" height="150px" width="200px">
+  <img src="images/sofa/sofa2.jpg" height="150px" width="200px">
+  <img src="images/sofa/sofa3.jpg" height="150px" width="200px">
+  <div>
+     <a class="items" href="sofa.html">For more "Click Here"</a>
+  </div>
+  </div>
+
+  <div class="grid-item" id="grid-4">Sofa Table<br>
+  <img src="images/tables/table18.jpg" height="150px" width="200px">
+  <div>
+     <a class="items" href="sofaTable.html">For more "Click Here"</a>
+  </div>
+  </div>
+
+  <div class="grid-item" id="grid-5">Study Table/Counter<br>
+    <img src="images/studyTable/studyTable1.jpg" height="150px" width="200px">
+    <img src="images/studyTable/studyTable2.jpg" height="150px" width="200px">
+    <div>
+    <a class="items" href="studyTable.html">For more "Click Here"</a>
+  </div>
+  </div>
+  </div>
+
+  <div class="grid-item" id="grid-6">Sofa Cum Bed<br>
+    <img src="images/sofaCumBed/sofaComeBed2.jpg" height="150px" width="200px">
+    <img src="images/sofaCumBed/sofaComeBed3.jpg" height="150px" width="200px">
+    <img src="images/sofaCumBed/sofaComeBed1.jpg" height="150px" width="200px">
+   
+  
+    <div>
+    <a class="items" href="sofaComeBed.html">For more "Click Here"</a>
+  </div>
+  </div>
+
+  <div class="grid-item" id="grid-7">Relaxing Chair<br>
+  <img src="images/relaxingChair/relaxingChair2.jpg" height="150px" width="100px">
+  <img src="images/relaxingChair/relaxingChair3.jpg" height="150px" width="100px">
+  <img src="images/relaxingChair/relaxingChair5.jpg" width="100px" height="150px">
+  <div>
+    <a class="items" href="relaxingChair.html">For more "Click Here"</a>
+  </div>
+  </div>
+
+  <div class="grid-item" id="grid-8">Chair<br>
+  <img src="images/chairs/chair2.jpg" height="150px" width="200px">
+  <img src="images/chairs/chair1.jpg" height="150px" width="200px">
+
+  
+  <div>
+    <a class="items" href="chair.html">For more "Click Here"</a>
+  </div>
+  </div>
+
+  <div class="grid-item" id="grid-9">Dinning Set<br>
+  <img src="images/dinning/dinning1.jpg" height="150px" width="100px">
+  <img src="images/dinning/dinning3.jpg" height="150px" width="200px">
+  <img src="images/dinning/dinning4.jpg" height="150px" width="200px">
+
+  <div>
+    <a class="items" href="dinningSet.html">For more "Click Here"</a>
+  </div>
+  </div>
+
+  <div class="grid-item" id="grid-10">Coolers<br>
+  <img src="images/cooler/cooler4.jpg"  height= "200px" width="200px">
+ 
+  <div>
+    <a class="items" href="cooler.html">For more "Click Here"</a>
+  </div>
+  </div>
+
+  <div class="grid-item" id="grid-11">Shoe Rack<br>
+    <img src="images/shoeRack/shoeRack1.jpg" height="200px" width="150px">
+    <img src="images/shoeRack/shoeRack2.jpg" height="200px" width="150px">
+  <div>
+    <a class="items" href="shoeRack.html">For more "Click Here"</a>
+  </div>
+  </div>
+  <div class="grid-item" id="grid-12">Mandir<br>
+    <img src="images/mandir/mandir3.jpg" height="200px" width="150px">
+    <img src="images/mandir/mandir2.jpg" height="200px" width="150px" >
+    
+  <div>
+    <a class="items" href="mandir.html">For more "Click Here"</a>
+  </div>
+  </div>
+
+  <div class="grid-item" id="grid-13">Dressing Table<br>
+  <img src="images/dressing/dressing1.jpg" height="150px" width="200px">
+  <img src="images/dressing/dressing4.jpg" height="150px" width="200px">
+  <img src="images/dressing/dressing5.jpg" height="150px" width="200px">
+  <img src="images/dressing/dressing6.jpg" height="150px" width="200px">
+   <img src="images/dressing/dressing3.jpg" height="150px" width="200px">
+ <div>
+    <a class="items" href="dressingTable.html">For more "Click Here"</a>
+  </div>
+  </div>
+
+ </div>
+</body>
+</html>
